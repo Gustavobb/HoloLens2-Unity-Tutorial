@@ -46,4 +46,4 @@ We're all set, now it's time to build our first application!
 4. Click Discover Features.
 5. On the Discover Features page click the "+" button to the left of Mixed Reality Toolkit (0 of 10) and select the latest version of Mixed Reality Toolkit Foundation.
 6. On the Discover Features page Click the "+" button to the left of Platform Support (0 of 5) and select the latest version of Mixed Reality OpenXR Plugin.
-7. Click Get Features.
+7. Click Get Features -> Import -> Approve.
