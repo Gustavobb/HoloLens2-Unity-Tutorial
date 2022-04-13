@@ -108,3 +108,10 @@ Now you're ready to start working with unity and Hololens. The next step is not 
 
 If all worked, the application should appear at any seconds on your device as soon as it finish building!
 That's all!
+
+### References
+https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2
+https://docs.microsoft.com/en-us/windows/mixed-reality/develop/install-the-tools?tabs=unity
+https://www.youtube.com/watch?v=wSPXTRYxq9A
+https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/2.7.3
+https://docs.microsoft.com/en-us/learn/modules/learn-mrtk-tutorials/
