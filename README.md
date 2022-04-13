@@ -12,11 +12,6 @@ In this section, I'll be teaching you how I got my first project up and running 
     * Universal Windows Platform (UWP) development.
     * Game development with Unity.
 
-
-![alt text](https://github.com/Gustavobb/HoloLens2-Unity-Tutorial/blob/main/Images/Settings.png)
-![alt text](https://github.com/Gustavobb/HoloLens2-Unity-Tutorial/blob/main/Images/Storage.png)
-![alt text](https://github.com/Gustavobb/HoloLens2-Unity-Tutorial/blob/main/Images/VS.png)
-
 2. Now, if you don't have the Windows 10 SDK, you can find the installer [here](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/).
 3. Download the Emulator [here](https://go.microsoft.com/fwlink/?linkid=2193111) (opitional, just in case you don't have the Hololens in hand).
 4. Open Unity Hub and install the Universal Windows Platform Build Support module for the unity version that you want to use (unity 2019.3 not recomended due to compile errors in ARM build architecture). You can do that by opening unity hub -> Installs -> clicking the gear button for the version you want -> Add Modules -> Universal Windows Platform Build Support.
