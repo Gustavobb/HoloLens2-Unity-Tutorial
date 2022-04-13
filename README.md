@@ -15,3 +15,9 @@ In this section, I'll be teaching you how I got my first project up and running 
 2. Now, if you don't have the Windows 10 SDK, you can find the installer [here](https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/)
 3. Download the Emulator [here](https://go.microsoft.com/fwlink/?linkid=2193111) (opitional, just in case you don't have the Hololens in hand)
 4. Open Unity Hub and install the Universal Windows Platform Build Support module for the unity version that you want to use (unity 2019.3 not recomended due to compile errors in ARM build architecture). You can do that by opening unity hub -> Installs -> clicking the gear button for the version you want -> Add Modules -> Universal Windows Platform Build Support.
+5. Last but not least, install the Mixed Reality Feature Tool from Microsoft [here](https://www.microsoft.com/en-us/download/details.aspx?id=102778)
+
+We're all set, now it's time to build our first application!
+
+### Second part - creating first unity project and configuring for MKT in Hololens 2
+1. A
