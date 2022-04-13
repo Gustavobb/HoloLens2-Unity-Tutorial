@@ -87,5 +87,24 @@ Now you're ready to start working with unity and Hololens. The next step is not 
 8. If asked to import Text Mesh Pro (TMP), click Import TMP Essentials. Close the TMP window.
 9. Last but not least, go to File -> Build Settings on the menu bar, and click Add Open Scenes.
 10. Click Build and choose a folder to save it.
+11. Wait until it's finished.
 
-### Sixth step - enable developer mode in Hololens and setup Visual Studio to build thought wifi to the device
+### Sixth step - enable developer mode in Hololens and setting Visual Studio to build remotely thought wifi or cable
+1. Turn on your Hololens 2.
+2. Enter the menu and Select Settings -> Update and Security -> For developers and enable developer mode.
+3. Now on your pc, go to the folder that you have built the unity app and click on the file with the sln extension, in my case, "HoloTutorial.sln".
+4. That should open Visual Studio. If not, open it manually by selecting in the menu bar File -> Open -> Project/Solution and choose the file with sln extension.
+5. Now on the menu bar, go to Project -> Properties.
+6. Configure Visual Studio for HoloLens by selecting the Master or Release configuration and the ARM64 
+7. Under Configuration Properties click General and ensure that you have the correct installed Visual Studio in the Platform Toolset box, in my case, Visual Studio 2022, then click Apply and close this window.architecture. In my case, release.
+8. Click the deployment target drop-down and then do one of the following:
+      * If you're building and deploying via USB, select Device
+      * If you're building and deploying via Wi-Fi connect to the same network as the Hololens, select Remote Machine and do the following:
+        * On the menu bar, go to Project -> Properties, and then under Configuration Properties click Debugging.
+        * You must enter the machine name of the Hololens which is the local IP address of the device (to find the IP of the hololens, open the Settings again on the device, and go to Network & Internet -> Wi-Fi, scroll all the way down and click Hardware properties. It should be displayed as IPv4 address)
+        * Click Ok and close the window
+9. Now build and run the application by clicking the green play button.
+10. If Visual Studio asks for a PIN, open the menu in Hololens 2 and Select Settings -> Update and Security -> For developers, then click Pair. There should appear a PIN.
+
+If all worked, the application should appear at any seconds on your device as soon as it finish building!
+That's all!
