@@ -1,6 +1,12 @@
 # Hololens 2 Unity tutorial (Windows)
 
+A collection of some of the setups I had to go trough, and things I had to learn in order to develop applications for Hololens 2 in unity.
+
 [1. Setup and first build](#setup)
+
+[2. Run and debug your Hololens 2 with Unity](#run)
+
+[2. Some tips to follow while developing to Hololens](#tips)
 
 ## <a name="setup"></a>Setup and first build
 In this section, I'll be teaching you how I got my first project up and running in Hololens 2, from an application built in Unity.
@@ -109,9 +115,53 @@ Now you're ready to start working with unity and Hololens. The next step is not 
 If all worked, the application should appear at any seconds on your device as soon as it finish building!
 That's all!
 
+## <a name="run"></a>Debug your Hololens
+Now I'm going to show you some tricks to help you debug your Hololens application in Unity.
+
+### Debug memory and CPU usage
+This one is pretty simple, all you need to do is create a GameObject and add the MixedRealityToolkit script to it (if that doesn't exist) and go to Diagnostics -> Enable Diagnostic System. 
+
+### Use Holographic Remoting Player to run your project in Hololens from your Unity editor wirelessly
+Great way to quickly debug your app without building and deploying a full project.
+
+Unity uses Holographic Remoting to enter "Play Mode" in Unity to preview your content on a real HoloLens device. Play Mode can also be used with a Windows Mixed Reality headset attached to your development PC.
+
+1. Install [Holographic Remoting Player](https://apps.microsoft.com/store/detail/holographic-remoting-player/9NBLGGH4SV40?hl=en-us&gl=US) on your Hololens 2.
+2. Open Holographic Remoting Player app on the HoloLens 2 and make sure to press the "Play" button on the app's interface. 
+3. Read the IP adress that appears in yellow.
+4. Now in Unity, on the menu bar, go to Mixed Reality -> Remoting -> Holographic remoting for play mode.
+5. In the Holographic Remoting for Play Mode window, in the Remote Host Name box, enter the IP address of your HoloLens 2.
+6. Select Enable Holographic Remoting for Play Mode.
+7. Click the Play button to enter Play Mode and voila!
+
+Ps: Keep in mind that Vuforia is not going to work properly in Hololens with Holographic Remoting Player because of the webcam recognition (if you managed to make it work feel free to make a pull request in this repo).
+
+## <a name="tips"></a>Tips and tricks for Hololens
+Some things I had to learn to overcome Hololens limitations (there're a lot of them).
+
+### Optimizing
+The tips for optimizing your project and code for Hololens 2 are pretty much the same to any Unity project. Some good tips can be found [here](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/performance-recommendations-for-unity) and [here](http://www.appzinside.com/2018/08/16/performance-optimization-tips-for-hololens-applications/). Remember to always set the flag Master if the build is the final one, that way all the debug code is removed from the app and performance is saved.
+
+### Screen recording
+There are various ways to capture Hololens screen, but from my experience, record screen directly from the device without connecting it to a PC is the best one.
+
+### App in background
+Once you close the app from the menu button in Hololens, the app continues to run in background, therefore, you need to close it again in the space you're in.
+
+### Display
+Avoid dark colors, because they're just transparent in AR.
+
 ### References
 https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2
+
 https://docs.microsoft.com/en-us/windows/mixed-reality/develop/install-the-tools?tabs=unity
+
 https://www.youtube.com/watch?v=wSPXTRYxq9A
+
 https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/2.7.3
+
 https://docs.microsoft.com/en-us/learn/modules/learn-mrtk-tutorials/
+
+https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/unity-play-mode?tabs=openxr
+
+Hope I helped some of you guys!
