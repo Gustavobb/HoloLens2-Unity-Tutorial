@@ -151,6 +151,9 @@ Once you close the app from the menu button in Hololens, the app continues to ru
 ### Display
 Avoid dark colors, because they're just transparent in AR.
 
+### Build
+Hololens 2 apparently does not accept multiple pc's deploying to the same device, so if that's the case, you'll always have to delete the current app from the Hololens if the build was made with a different pc from last time.
+
 ### References
 https://docs.microsoft.com/en-us/windows/mixed-reality/develop/advanced-concepts/using-visual-studio?tabs=hl2
 
